@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <style>
+        .hero-bg{
+            height: 400px;
+            background-size: cover;
+            background-image: url('./dubai.jpg');
+            background-position-y: center;
+        }
+        </style>
+
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+
+        <!--
+            navbar: 
+            will apply spacing for the nav element
+
+            navbar-dark:
+            will apply the predetermined high-contrast color the element's text
+
+            bg-dark:
+            will apply the predetermined dark background-color the element
+        -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="bi bi-house-door-fill"></i>
+              </a>
+
+
+              <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>   
+        
+        <div class="hero-bg"></div>
+
+        <!-- 
+            d-flex: 
+            Will give the property "display: flex"; i.e, stack elements horizontally
+            
+            justify-content-evenly:
+            Will give the property "justify-content: space-evenly"; i.e, space children evenly
+
+            container:
+            Will set a maximum width for the div layer AND center it the div
+
+            mt-5:
+            applies 5 units of margin (m) from the top (t)
+        -->
+        <!-- Cards Section -->
+        <div class="d-flex justify-content-between container my-5 flex-wrap">
+            <div class="card mb-2" style="width: 20rem;">
+                <img src="./zayed-mosque.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="width: 20rem;">
+                <img src="./zayed-mosque.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="width: 20rem;">
+                <img src="./zayed-mosque.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Media Section 1-->
+        <div class="container">
+            <hr />
+        </div>
+
+        <div class="container d-flex justify-content-between align-items-center flex-wrap my-5">
+            <div style="max-width: 800px">
+                <h1>First featurette heading. It’ll blow your mind.</h1>
+                <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
+                </p>
+            </div>
+
+            <div style="background-image: url('./burj-al-arab.jpg'); background-position: center center; height: 350px; width: 350px;"></div>
+        </div>
+
+
+        <!-- Media Section 2-->
+        <div class="container">
+            <hr />
+        </div>
+
+        <div class="container d-flex justify-content-between align-items-center flex-wrap my-5 flex-row-reverse">
+            <div style="max-width: 800px">
+                <h1>First featurette heading. It’ll blow your mind.</h1>
+                <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
+                </p>
+            </div>
+
+            <div style="background-image: url('./burj-al-arab.jpg'); background-position: center center; height: 350px; width: 350px;"></div>
+        </div>
+
+        <!-- Media Section 3-->
+        <div class="container">
+            <hr />
+        </div>
+
+        <div class="container d-flex justify-content-between align-items-center flex-wrap my-5">
+            <div style="max-width: 800px">
+                <h1>First featurette heading. It’ll blow your mind.</h1>
+                <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
+                </p>
+            </div>
+
+            <div style="background-image: url('./burj-al-arab.jpg'); background-position: center center; height: 350px; width: 350px;"></div>
+        </div>
+
+        
+
+
+    </body>
+</html>
